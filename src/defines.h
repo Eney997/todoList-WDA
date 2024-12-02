@@ -5,3 +5,4 @@
 #define todoIn_EditBox 1002
 #define todoSave_Button 1003
 #define todoSetter_EditBox 1004
+#define removeTodo_button 1005

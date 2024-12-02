@@ -11,7 +11,7 @@ void wmCreateForWindowElements(HWND hwnd)
 	elemntCreation[0] = CreateWindowA("button","X",winStls|BS_OWNERDRAW|WS_BORDER,450,8,30,30,hwnd,(HMENU)exit_Button,0,0);
 	elemntCreation[1] = CreateWindowA("button","_",winStls|BS_OWNERDRAW|WS_BORDER,420,8,30,30,hwnd,(HMENU)minimize_Button,0,0);
 
-	elemntCreation[2] = CreateWindowA("Edit","",winStls|WS_BORDER|ES_MULTILINE|ES_AUTOVSCROLL,35,70,350,40,hwnd,(HMENU)todoIn_EditBox,0,0);
+	elemntCreation[2] = CreateWindowA("Edit","",winStls|WS_BORDER,35,70,350,40,hwnd,(HMENU)todoIn_EditBox,0,0);
 	SendMessageA(elemntCreation[2],WM_SETFONT,(UINT)hf,0);
 
 	elemntCreation[3] = CreateWindowA("button","",winStls|WS_BORDER|BS_OWNERDRAW,400,70,60,40,hwnd,(HMENU)todoSave_Button,0,0);
